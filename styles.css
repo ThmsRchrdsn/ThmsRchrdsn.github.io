@@ -1,12 +1,12 @@
 body {
-  background-color: #6B695E;
+  background-color: #0d0005;
   }
 
 .header {
     font-family: Arial, Helvetica, sans-serif;
     padding: 60px;
     text-align: center;
-    background: #4C4E52;
+    background: #004225;
     color: white;
     font-size: 30px;
   }
@@ -15,4 +15,8 @@ body {
     width: 300px;
     height: 300px;
     border-radius: 50%;
+  }
+
+  p {
+    color: #bbb7b9;
   }
