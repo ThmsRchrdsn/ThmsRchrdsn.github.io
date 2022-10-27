@@ -12,7 +12,7 @@
     color: var(--light_text_colour);
     }
 
-  .header {
+  .header{
     /* font-family: Arial, Helvetica, sans-serif; */
     padding: 30px;
     text-align: center;
@@ -50,13 +50,7 @@
     color: var(--dark_text_colour);
   }
 
-  h1 {
-    display: inline-block;
-    text-align:right;
-  }
-
   img {
-    display: inline-block;
     width: 200px;
     height: 200px;
     border-radius: 50%;
