@@ -1,21 +1,88 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #0d0005;
-  color: #bbb7b9;
+  :root {
+    --background_colour_constant: #ffce00;
+    --dark_text_colour: #262228;
   }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background_colour_constant);
+    color: var(--dark_text_colour);
+    }
 
-.header {
+  .header {
     /* font-family: Arial, Helvetica, sans-serif; */
     padding: 60px;
     text-align: center;
     background: #004225;
-    color: var(--main-text-color);
+    color: white;
     font-size: 30px;
+  }
+
+  /* Add a black background color to the top navigation */
+  .topnav {
+    background-color: #007849;
+    overflow: hidden;
+  }
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    font-weight: bold;
+    background-color: var(--background_colour_constant);
+    color: var(--dark_text_colour);
+  }
+
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
   }
 
   img {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background-color: #0d0005;
+    background-color: var(--background_colour_constant);
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+  }
+
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-envelope {
+    background: #ff5100;
+    color: white;
+  }
+
+  .fa-github {
+    background: Black;
+    color: white;
   }
