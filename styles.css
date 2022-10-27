@@ -1,33 +1,36 @@
   :root {
-    --background_colour_constant: #ffce00;
-    --dark_text_colour: #262228;
+    --background_colour_constant: #000000;
+    --dark_text_colour: #000000;
+    --light_text_colour: white;
+    --nav_bar_colour: #007849;
+    --header-colour: #004225;
   }
   
   body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--background_colour_constant);
-    color: var(--dark_text_colour);
+    color: var(--light_text_colour);
     }
 
   .header {
     /* font-family: Arial, Helvetica, sans-serif; */
-    padding: 60px;
+    padding: 30px;
     text-align: center;
-    background: #004225;
-    color: white;
+    background: var(--header-colour);
+    color: var(--dark_text_colour);
     font-size: 30px;
   }
 
   /* Add a black background color to the top navigation */
   .topnav {
-    background-color: #007849;
+    background-color: var(--nav_bar_colour);
     overflow: hidden;
   }
 
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
-    color: #f2f2f2;
+    color: var(--dark_text_colour);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -38,18 +41,24 @@
   .topnav a:hover {
     font-weight: bold;
     background-color: var(--background_colour_constant);
-    color: var(--dark_text_colour);
+    color: var(--light_text_colour);
   }
 
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
+    background-color: var(--nav_bar_colour);
+    color: var(--dark_text_colour);
+  }
+
+  h1 {
+    display: inline-block;
+    text-align:right;
   }
 
   img {
-    width: 300px;
-    height: 300px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background-color: var(--background_colour_constant);
   }
