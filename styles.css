@@ -5,6 +5,12 @@
     --nav_bar_colour: #007849;
     --header-colour: #004225;
   }
+
+  @-webkit-keyframes pulsate {
+    0%   { box-shadow: 0 0 0 var(--nav_bar_colour); }
+    50%  { box-shadow: 0 0 30px var(--nav_bar_colour); }
+    100% { box-shadow: 0 0 0 var(--nav_bar_colour); }
+  }
   
   body {
     font-family: Arial, Helvetica, sans-serif;
@@ -57,6 +63,8 @@
     height: 200px;
     border-radius: 50%;
     background-color: var(--background_colour_constant);
+    box-shadow: 0 0 30px var(--nav_bar_colour);
+    animation: pulsate 5s ease-out infinite;
   }
 
   .fa {
