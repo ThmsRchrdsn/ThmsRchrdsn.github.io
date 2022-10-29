@@ -6,7 +6,7 @@
     --header-colour: #004225;
   }
 
-  @-webkit-keyframes pulsate {
+  @keyframes pulsate {
     0%   { box-shadow: 0 0 0 var(--nav_bar_colour); }
     50%  { box-shadow: 0 0 30px var(--nav_bar_colour); }
     100% { box-shadow: 0 0 0 var(--nav_bar_colour); }
