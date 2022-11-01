@@ -3,6 +3,7 @@
     --dark_text_colour: #000000;
     --light_text_colour: white;
     --nav_bar_colour: #007849;
+    --scroll_bar_colour: #00b972;
     --header-colour: #004225;
   }
 
@@ -98,4 +99,12 @@
   .fa-github {
     background: Black;
     color: white;
+  }
+
+  .pbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background: var(--scroll_bar_colour);
   }
