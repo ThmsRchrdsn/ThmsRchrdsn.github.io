@@ -68,6 +68,8 @@
     animation: pulsate 5s ease-out infinite;
   }
 
+  ul li { padding: 10px 0px; }
+
   .fa {
     padding: 20px;
     font-size: 30px;
