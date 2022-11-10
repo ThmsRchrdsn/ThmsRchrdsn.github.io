@@ -1,123 +1,142 @@
-  :root {
-    --background_colour_constant: #000000;
-    --dark_text_colour: #000000;
-    --light_text_colour: white;
-    --nav_bar_colour: #007849;
-    --scroll_bar_colour: #00b972;
-    --header-colour: #004225;
+:root {
+  --background_colour_constant: #000000;
+  --dark_text_colour: #000000;
+  --light_text_colour: white;
+  --nav_bar_colour: #007849;
+  --scroll_bar_colour: #00b972;
+  --h2_colour: #3effb5;
+  --header-colour: #004225;
+}
+
+@keyframes profile_pulsate {
+  0% {
+    box-shadow: 0 0 0 var(--nav_bar_colour);
   }
-
-  @keyframes profile_pulsate {
-    0%   { box-shadow: 0 0 0 var(--nav_bar_colour); }
-    50%  { box-shadow: 0 0 30px var(--nav_bar_colour); }
-    100% { box-shadow: 0 0 0 var(--nav_bar_colour); }
+  50% {
+    box-shadow: 0 0 30px var(--nav_bar_colour);
   }
-
-  @keyframes bullet_pulsate {
-    0%   { box-shadow: 0 0 0 var(--light_text_colour); }
-    50%  { box-shadow: 0 0 30px var(--light_text_colour); }
-    100% { box-shadow: 0 0 0 var(--light_text_colour); }
+  100% {
+    box-shadow: 0 0 0 var(--nav_bar_colour);
   }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--background_colour_constant);
-    color: var(--light_text_colour);
-    }
+}
 
-  .header{
-    /* font-family: Arial, Helvetica, sans-serif; */
-    padding: 30px;
-    text-align: center;
-    background: var(--header-colour);
-    color: var(--dark_text_colour);
-    font-size: 30px;
+@keyframes bullet_pulsate {
+  0% {
+    box-shadow: 0 0 0 var(--light_text_colour);
   }
-
-  /* Add a black background color to the top navigation */
-  .topnav {
-    background-color: var(--nav_bar_colour);
-    overflow: hidden;
+  50% {
+    box-shadow: 0 0 30px var(--light_text_colour);
   }
-
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    font-weight: bold;
-    float: left;
-    color: var(--dark_text_colour);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  100% {
+    box-shadow: 0 0 0 var(--light_text_colour);
   }
+}
 
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    font-weight: bold;
-    background-color: var(--background_colour_constant);
-    color: var(--light_text_colour);
-  }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background_colour_constant);
+  color: var(--light_text_colour);
+}
 
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    font-weight: bold;
-    background-color: var(--nav_bar_colour);
-    color: var(--dark_text_colour);
-  }
+.header {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  padding: 30px;
+  text-align: center;
+  background: var(--header-colour);
+  color: var(--dark_text_colour);
+  font-size: 30px;
+}
 
-  img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: var(--background_colour_constant);
-    box-shadow: 0 0 100px var(--nav_bar_colour);
-    animation: profile_pulsate 5s ease-out infinite;
-  }
+.section_header {
+  color: var(--h2_colour);
+}
 
-  ul li { padding: 10px 0px; }
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: var(--nav_bar_colour);
+  overflow: hidden;
+}
 
-  .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 5px;
-  }
+/* Style the links inside the navigation bar */
+.topnav a {
+  font-weight: bold;
+  float: left;
+  color: var(--dark_text_colour);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
-  .fa:hover {
-      opacity: 0.7;
-  }
+/* Change the color of links on hover */
+.topnav a:hover {
+  font-weight: bold;
+  background-color: var(--background_colour_constant);
+  color: var(--light_text_colour);
+}
 
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
+/* Add a color to the active/current link */
+.topnav a.active {
+  font-weight: bold;
+  background-color: var(--nav_bar_colour);
+  color: var(--dark_text_colour);
+}
 
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: var(--background_colour_constant);
+  box-shadow: 0 0 100px var(--nav_bar_colour);
+  animation: profile_pulsate 5s ease-out infinite;
+}
 
-  .fa-envelope {
-    background: #ff5100;
-    color: white;
-  }
+ul li {
+  padding: 10px 0px;
+}
 
-  .fa-github {
-    background: Black;
-    color: white;
-  }
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+}
 
-  .pbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 5px;
-    background: var(--scroll_bar_colour);
-  }
+.fa:hover {
+  opacity: 0.7;
+}
 
-  /* Timeline Container */
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-envelope {
+  background: #ff5100;
+  color: white;
+}
+
+.fa-github {
+  background: Black;
+  color: white;
+}
+
+.pbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background: var(--scroll_bar_colour);
+}
+
+/* Timeline Container */
 .timeline {
   background: black;
   margin: 20px auto;
