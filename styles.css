@@ -3,20 +3,20 @@
   --dark_text_colour: #000000;
   --light_text_colour: white;
   --nav_bar_colour: #007849;
-  --scroll_bar_colour: #00b972;
-  --h2_colour: #3effb5;
+  --scroll_bar_colour: #3effb5;
+  --h2_colour: #00b972;
   --header-colour: #004225;
 }
 
 @keyframes profile_pulsate {
   0% {
-    box-shadow: 0 0 0 var(--nav_bar_colour);
+    box-shadow: 0 0 0 var(--dark_text_colour);
   }
   50% {
-    box-shadow: 0 0 30px var(--nav_bar_colour);
+    box-shadow: 0 0 30px var(--dark_text_colour);
   }
   100% {
-    box-shadow: 0 0 0 var(--nav_bar_colour);
+    box-shadow: 0 0 0 var(--dark_text_colour);
   }
 }
 
@@ -83,12 +83,14 @@ body {
 }
 
 img {
+  object-fit: cover;
   width: 200px;
   height: 200px;
   border-radius: 50%;
   background-color: var(--background_colour_constant);
-  box-shadow: 0 0 100px var(--nav_bar_colour);
+  box-shadow: 0 0 100px var(--dark_text_colour);
   animation: profile_pulsate 5s ease-out infinite;
+  border: 5px solid var(--dark_text_colour);
 }
 
 ul li {
