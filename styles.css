@@ -7,10 +7,16 @@
     --header-colour: #004225;
   }
 
-  @keyframes pulsate {
+  @keyframes profile_pulsate {
     0%   { box-shadow: 0 0 0 var(--nav_bar_colour); }
     50%  { box-shadow: 0 0 30px var(--nav_bar_colour); }
     100% { box-shadow: 0 0 0 var(--nav_bar_colour); }
+  }
+
+  @keyframes bullet_pulsate {
+    0%   { box-shadow: 0 0 0 var(--light_text_colour); }
+    50%  { box-shadow: 0 0 30px var(--light_text_colour); }
+    100% { box-shadow: 0 0 0 var(--light_text_colour); }
   }
   
   body {
@@ -64,8 +70,8 @@
     height: 200px;
     border-radius: 50%;
     background-color: var(--background_colour_constant);
-    box-shadow: 0 0 30px var(--nav_bar_colour);
-    animation: pulsate 5s ease-out infinite;
+    box-shadow: 0 0 100px var(--nav_bar_colour);
+    animation: profile_pulsate 5s ease-out infinite;
   }
 
   ul li { padding: 10px 0px; }
@@ -110,3 +116,59 @@
     height: 5px;
     background: var(--scroll_bar_colour);
   }
+
+  /* Timeline Container */
+.timeline {
+  background: black;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Outer Layer with the timeline border */
+.outer {
+  border-left: 2px solid white;
+}
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+/* Title of the card */
+.title {
+  color: var(--light_text_colour);
+  position: relative;
+}
+
+/* Timeline dot  */
+.title::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 999px;
+  left: -31px;
+  box-shadow: 0 0 50px var(--light_text_colour);
+  animation: bullet_pulsate 5s ease-out infinite;
+}
+
+.subtitle {
+  color: var(--light_text_colour);
+  position: relative;
+}
+
+/* Timeline dot  */
+.subtitle::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 999px;
+  left: -29px;
+  box-shadow: 0 0 30px var(--light_text_colour);
+  animation: bullet_pulsate 5s ease-out infinite;
+}
