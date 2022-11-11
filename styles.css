@@ -53,7 +53,7 @@ body {
 }
 
 .header {
-  /* font-family: Brush Script MT, Brush Script Std, cursive; */
+  /* font-family: Lucida Handwriting, Brush Script Std, cursive; */
   padding: 30px;
   text-align: center;
   background: var(--header-colour);
@@ -107,7 +107,7 @@ img {
   border: 5px solid var(--dark_text_colour);
 }
 
-ul li {
+.module_list li {
   padding: 10px 0px;
 }
 
