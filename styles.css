@@ -2,10 +2,11 @@
   --background_colour_constant: #000000;
   --dark_text_colour: #000000;
   --light_text_colour: white;
-  --nav_bar_colour: #007849;
-  --scroll_bar_colour: #3effb5;
-  --h2_colour: #00b972;
   --header-colour: #004225;
+  --nav_bar_colour: #007849;
+  --h2_colour: #00b972;
+  --title_colour: #00ff9d;
+  --scroll_bar_colour: #46ffb8;
 }
 
 @keyframes profile_pulsate {
@@ -21,6 +22,19 @@
 }
 
 @keyframes bullet_pulsate {
+  0% {
+    box-shadow: 0 0 0 var(--title_colour);
+  }
+  50% {
+    box-shadow: 0 0 30px var(--title_colour);
+  }
+  100% {
+    box-shadow: 0 0 0 var(--title_colour);
+  }
+}
+
+
+@keyframes sub_bullet_pulsate {
   0% {
     box-shadow: 0 0 0 var(--light_text_colour);
   }
@@ -39,7 +53,7 @@ body {
 }
 
 .header {
-  /* font-family: Arial, Helvetica, sans-serif; */
+  /* font-family: Brush Script MT, Brush Script Std, cursive; */
   padding: 30px;
   text-align: center;
   background: var(--header-colour);
@@ -107,27 +121,31 @@ ul li {
 }
 
 .fa:hover {
-  opacity: 0.7;
+  opacity: 0.4;
 }
 
 .fa-twitter {
   background: #55acee;
   color: white;
+  border: 5px solid var(--h2_colour);
 }
 
 .fa-linkedin {
   background: #007bb5;
   color: white;
+  border: 5px solid var(--h2_colour);
 }
 
 .fa-envelope {
   background: #ff5100;
   color: white;
+  border: 5px solid var(--h2_colour);
 }
 
 .fa-github {
   background: Black;
   color: white;
+  border: 5px solid var(--h2_colour);
 }
 
 .pbar {
@@ -159,7 +177,7 @@ ul li {
 
 /* Title of the card */
 .title {
-  color: var(--light_text_colour);
+  color: var(--title_colour);
   position: relative;
 }
 
@@ -169,10 +187,10 @@ ul li {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: white;
+  background: var(--title_colour);
   border-radius: 999px;
   left: -31px;
-  box-shadow: 0 0 50px var(--light_text_colour);
+  box-shadow: 0 0 50px var(--title_colour);
   animation: bullet_pulsate 5s ease-out infinite;
 }
 
@@ -191,5 +209,5 @@ ul li {
   border-radius: 999px;
   left: -29px;
   box-shadow: 0 0 30px var(--light_text_colour);
-  animation: bullet_pulsate 5s ease-out infinite;
+  animation: sub_bullet_pulsate 5s ease-out infinite;
 }
