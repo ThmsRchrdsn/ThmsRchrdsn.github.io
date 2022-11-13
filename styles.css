@@ -113,10 +113,11 @@ img {
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 30px;
+  width: 80px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 5px;
+  margin: 5px 5px !important;
+  border: 5px solid var(--h2_colour);
 }
 
 .fa:hover {
@@ -126,25 +127,21 @@ img {
 .fa-twitter {
   background: #55acee;
   color: white;
-  border: 5px solid var(--h2_colour);
 }
 
 .fa-linkedin {
   background: #007bb5;
   color: white;
-  border: 5px solid var(--h2_colour);
 }
 
 .fa-envelope {
   background: #ff5100;
   color: white;
-  border: 5px solid var(--h2_colour);
 }
 
 .fa-github {
   background: Black;
   color: white;
-  border: 5px solid var(--h2_colour);
 }
 
 .fa-home:hover {
@@ -154,6 +151,7 @@ img {
 .fa-home {
   padding: 0 !important;
   height: 20px;
+  width: 20px;
   text-align: center;
   text-decoration: none;
   margin: 0 !important;
@@ -228,4 +226,151 @@ img {
 /* Style the tab content */
 .tabcontent {
   display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 0%;
+  border: 5px solid var(--h2_colour);
+  box-shadow: none;
+  animation: none;
+}
+
+div.gallery img:hover {
+  opacity: 0.5;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 14%;
+}
+
+@media only screen and (max-width: 1100px) {
+  .responsive {
+    width: 14%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .responsive {
+    width: 16.66666%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .responsive {
+    width: 19.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .responsive {
+    width: 24.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 33.33333%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 50%;
+  height: auto;
+  border-radius: 0%;
+  border: 5px solid var(--h2_colour);
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: var(--light_text_colour);
+  padding: 10px 0;
+  height: 150px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: var(--light_text_colour);
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  opacity: 0.5;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
 }
