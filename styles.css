@@ -33,7 +33,6 @@
   }
 }
 
-
 @keyframes sub_bullet_pulsate {
   0% {
     box-shadow: 0 0 0 var(--light_text_colour);
@@ -148,6 +147,20 @@ img {
   border: 5px solid var(--h2_colour);
 }
 
+.fa-home:hover {
+  opacity: 1 !important;
+}
+
+.fa-home {
+  padding: 0 !important;
+  height: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 !important;
+  font-size: 22px;
+  border: none;
+}
+
 .pbar {
   position: fixed;
   top: 0;
@@ -210,4 +223,9 @@ img {
   left: -29px;
   box-shadow: 0 0 30px var(--light_text_colour);
   animation: sub_bullet_pulsate 5s ease-out infinite;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
 }
