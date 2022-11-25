@@ -304,11 +304,6 @@ div.desc {
   }
 }
 
-
-
-
-
-
 .modal {
   display: none;
   /* Hidden by default */
@@ -373,4 +368,25 @@ div.desc {
   .modal-content {
     width: 100%;
   }
+}
+
+button {
+  background-color: var(--nav_bar_colour); /* Green */
+  border: none;
+  color: var(--dark_text_colour);
+  font-weight: bold;
+  font-size: 17px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+}
+.container.space-around {
+  justify-content: space-around;
 }
