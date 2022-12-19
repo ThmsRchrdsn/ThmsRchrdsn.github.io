@@ -1,3 +1,6 @@
+
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+
 :root {
   --background_colour_constant: #000000;
   --dark_text_colour: #000000;
@@ -52,12 +55,12 @@ body {
 }
 
 .header {
-  /* font-family: Lucida Handwriting, Brush Script Std, cursive; */
   padding: 30px;
   text-align: center;
   background: var(--header-colour);
   color: var(--dark_text_colour);
-  font-size: 30px;
+  font-family: "Tangerine", serif;
+  font-size: 50px;
 }
 
 .section_header {
@@ -68,6 +71,7 @@ body {
 .topnav {
   background-color: var(--nav_bar_colour);
   overflow: hidden;
+  vertical-align: top;
 }
 
 /* Style the links inside the navigation bar */
