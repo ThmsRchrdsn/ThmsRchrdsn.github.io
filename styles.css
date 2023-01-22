@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Ms Madi");
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
 
 :root {
   --background_colour_constant: #000000;
@@ -58,7 +58,7 @@ body {
   text-align: center;
   background: var(--header-colour);
   color: var(--dark_text_colour);
-  font-family: "Ms Madi", serif;
+  /* font-family: "Pacifico", serif; */
   font-size: 50px;
 }
 
